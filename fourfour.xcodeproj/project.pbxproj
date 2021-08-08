@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1156374266D46EC00FF455E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1156373266D46EC00FF455E /* LaunchScreen.storyboard */; };
+		B1ABD8EB266C578800CF262B /* MusicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABD8EA266C578800CF262B /* MusicAPI.swift */; };
+		B1ABD8F1266C686500CF262B /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABD8F0266C686500CF262B /* Song.swift */; };
+		B1ABD8F9266C6B7500CF262B /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABD8F8266C6B7500CF262B /* DiscoverView.swift */; };
+		B1ABD8FB266C6BD300CF262B /* CompositionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABD8FA266C6BD300CF262B /* CompositionView.swift */; };
+		B1ABD8FD266C6BF600CF262B /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABD8FC266C6BF600CF262B /* LibraryView.swift */; };
+		B1ABD8FF266C9D1100CF262B /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABD8FE266C9D1100CF262B /* Search.swift */; };
 		B1C4EE74265F6DE20059FBBD /* fourfourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C4EE73265F6DE20059FBBD /* fourfourApp.swift */; };
 		B1C4EE76265F6DE20059FBBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C4EE75265F6DE20059FBBD /* ContentView.swift */; };
 		B1C4EE78265F6DE30059FBBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C4EE77265F6DE30059FBBD /* Assets.xcassets */; };
 		B1C4EE7B265F6DE30059FBBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C4EE7A265F6DE30059FBBD /* Preview Assets.xcassets */; };
-		B1C4EE86265F6DE30059FBBD /* fourfourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C4EE85265F6DE30059FBBD /* fourfourTests.swift */; };
-		B1C4EE91265F6DE30059FBBD /* fourfourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C4EE90265F6DE30059FBBD /* fourfourUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B1156373266D46EC00FF455E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1ABD8EA266C578800CF262B /* MusicAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAPI.swift; sourceTree = "<group>"; };
+		B1ABD8F0266C686500CF262B /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		B1ABD8F8266C6B7500CF262B /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		B1ABD8FA266C6BD300CF262B /* CompositionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionView.swift; sourceTree = "<group>"; };
+		B1ABD8FC266C6BF600CF262B /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		B1ABD8FE266C9D1100CF262B /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		B1C4EE70265F6DE20059FBBD /* fourfour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fourfour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1C4EE73265F6DE20059FBBD /* fourfourApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourfourApp.swift; sourceTree = "<group>"; };
 		B1C4EE75265F6DE20059FBBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,11 +52,7 @@
 		B1C4EE7A265F6DE30059FBBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B1C4EE7C265F6DE30059FBBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1C4EE81265F6DE30059FBBD /* fourfourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fourfourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1C4EE85265F6DE30059FBBD /* fourfourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourfourTests.swift; sourceTree = "<group>"; };
-		B1C4EE87265F6DE30059FBBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1C4EE8C265F6DE30059FBBD /* fourfourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fourfourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1C4EE90265F6DE30059FBBD /* fourfourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourfourUITests.swift; sourceTree = "<group>"; };
-		B1C4EE92265F6DE30059FBBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,12 +80,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B115636C266D43C300FF455E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B1156373266D46EC00FF455E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B1ABD8EE266C681D00CF262B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1C4EE75265F6DE20059FBBD /* ContentView.swift */,
+				B1ABD8F8266C6B7500CF262B /* DiscoverView.swift */,
+				B1ABD8FA266C6BD300CF262B /* CompositionView.swift */,
+				B1ABD8FC266C6BF600CF262B /* LibraryView.swift */,
+				B1ABD8FE266C9D1100CF262B /* Search.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B1ABD8EF266C683700CF262B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B1ABD8F0266C686500CF262B /* Song.swift */,
+				B1ABD8EA266C578800CF262B /* MusicAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		B1C4EE67265F6DE20059FBBD = {
 			isa = PBXGroup;
 			children = (
 				B1C4EE72265F6DE20059FBBD /* fourfour */,
-				B1C4EE84265F6DE30059FBBD /* fourfourTests */,
-				B1C4EE8F265F6DE30059FBBD /* fourfourUITests */,
 				B1C4EE71265F6DE20059FBBD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,8 +130,10 @@
 		B1C4EE72265F6DE20059FBBD /* fourfour */ = {
 			isa = PBXGroup;
 			children = (
+				B115636C266D43C300FF455E /* Storyboards */,
 				B1C4EE73265F6DE20059FBBD /* fourfourApp.swift */,
-				B1C4EE75265F6DE20059FBBD /* ContentView.swift */,
+				B1ABD8EF266C683700CF262B /* API */,
+				B1ABD8EE266C681D00CF262B /* Views */,
 				B1C4EE77265F6DE30059FBBD /* Assets.xcassets */,
 				B1C4EE7C265F6DE30059FBBD /* Info.plist */,
 				B1C4EE79265F6DE30059FBBD /* Preview Content */,
@@ -110,24 +147,6 @@
 				B1C4EE7A265F6DE30059FBBD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		B1C4EE84265F6DE30059FBBD /* fourfourTests */ = {
-			isa = PBXGroup;
-			children = (
-				B1C4EE85265F6DE30059FBBD /* fourfourTests.swift */,
-				B1C4EE87265F6DE30059FBBD /* Info.plist */,
-			);
-			path = fourfourTests;
-			sourceTree = "<group>";
-		};
-		B1C4EE8F265F6DE30059FBBD /* fourfourUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B1C4EE90265F6DE30059FBBD /* fourfourUITests.swift */,
-				B1C4EE92265F6DE30059FBBD /* Info.plist */,
-			);
-			path = fourfourUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1C4EE7B265F6DE30059FBBD /* Preview Assets.xcassets in Resources */,
+				B1156374266D46EC00FF455E /* LaunchScreen.storyboard in Resources */,
 				B1C4EE78265F6DE30059FBBD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1ABD8FD266C6BF600CF262B /* LibraryView.swift in Sources */,
+				B1ABD8EB266C578800CF262B /* MusicAPI.swift in Sources */,
+				B1ABD8FB266C6BD300CF262B /* CompositionView.swift in Sources */,
 				B1C4EE76265F6DE20059FBBD /* ContentView.swift in Sources */,
 				B1C4EE74265F6DE20059FBBD /* fourfourApp.swift in Sources */,
+				B1ABD8FF266C9D1100CF262B /* Search.swift in Sources */,
+				B1ABD8F1266C686500CF262B /* Song.swift in Sources */,
+				B1ABD8F9266C6B7500CF262B /* DiscoverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +294,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1C4EE86265F6DE30059FBBD /* fourfourTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +301,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1C4EE91265F6DE30059FBBD /* fourfourUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +443,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"fourfour/Preview Content\"";
+				DEVELOPMENT_TEAM = 9C367LP67D;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = fourfour/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -440,6 +465,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"fourfour/Preview Content\"";
+				DEVELOPMENT_TEAM = 9C367LP67D;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = fourfour/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
