@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B1156374266D46EC00FF455E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1156373266D46EC00FF455E /* LaunchScreen.storyboard */; };
+		B146CF79270283CC00EEF4DC /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B146CF78270283CC00EEF4DC /* NewNoteView.swift */; };
+		B146CF7B2702862800EEF4DC /* DirectoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B146CF7A2702862800EEF4DC /* DirectoryView.swift */; };
 		B1ABD8EB266C578800CF262B /* MusicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABD8EA266C578800CF262B /* MusicAPI.swift */; };
 		B1ABD8F1266C686500CF262B /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABD8F0266C686500CF262B /* Song.swift */; };
 		B1ABD8F9266C6B7500CF262B /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABD8F8266C6B7500CF262B /* DiscoverView.swift */; };
@@ -20,25 +22,10 @@
 		B1C4EE7B265F6DE30059FBBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C4EE7A265F6DE30059FBBD /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B1C4EE82265F6DE30059FBBD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B1C4EE68265F6DE20059FBBD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B1C4EE6F265F6DE20059FBBD;
-			remoteInfo = fourfour;
-		};
-		B1C4EE8D265F6DE30059FBBD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B1C4EE68265F6DE20059FBBD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B1C4EE6F265F6DE20059FBBD;
-			remoteInfo = fourfour;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		B1156373266D46EC00FF455E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B146CF78270283CC00EEF4DC /* NewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteView.swift; sourceTree = "<group>"; };
+		B146CF7A2702862800EEF4DC /* DirectoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryView.swift; sourceTree = "<group>"; };
 		B1ABD8EA266C578800CF262B /* MusicAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAPI.swift; sourceTree = "<group>"; };
 		B1ABD8F0266C686500CF262B /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		B1ABD8F8266C6B7500CF262B /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
@@ -51,26 +38,10 @@
 		B1C4EE77265F6DE30059FBBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1C4EE7A265F6DE30059FBBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B1C4EE7C265F6DE30059FBBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1C4EE81265F6DE30059FBBD /* fourfourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fourfourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1C4EE8C265F6DE30059FBBD /* fourfourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fourfourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B1C4EE6D265F6DE20059FBBD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1C4EE7E265F6DE30059FBBD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1C4EE89265F6DE30059FBBD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -96,6 +67,8 @@
 				B1ABD8FA266C6BD300CF262B /* CompositionView.swift */,
 				B1ABD8FC266C6BF600CF262B /* LibraryView.swift */,
 				B1ABD8FE266C9D1100CF262B /* Search.swift */,
+				B146CF78270283CC00EEF4DC /* NewNoteView.swift */,
+				B146CF7A2702862800EEF4DC /* DirectoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,8 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				B1C4EE70265F6DE20059FBBD /* fourfour.app */,
-				B1C4EE81265F6DE30059FBBD /* fourfourTests.xctest */,
-				B1C4EE8C265F6DE30059FBBD /* fourfourUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,42 +140,6 @@
 			productReference = B1C4EE70265F6DE20059FBBD /* fourfour.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B1C4EE80265F6DE30059FBBD /* fourfourTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B1C4EE98265F6DE30059FBBD /* Build configuration list for PBXNativeTarget "fourfourTests" */;
-			buildPhases = (
-				B1C4EE7D265F6DE30059FBBD /* Sources */,
-				B1C4EE7E265F6DE30059FBBD /* Frameworks */,
-				B1C4EE7F265F6DE30059FBBD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B1C4EE83265F6DE30059FBBD /* PBXTargetDependency */,
-			);
-			name = fourfourTests;
-			productName = fourfourTests;
-			productReference = B1C4EE81265F6DE30059FBBD /* fourfourTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B1C4EE8B265F6DE30059FBBD /* fourfourUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B1C4EE9B265F6DE30059FBBD /* Build configuration list for PBXNativeTarget "fourfourUITests" */;
-			buildPhases = (
-				B1C4EE88265F6DE30059FBBD /* Sources */,
-				B1C4EE89265F6DE30059FBBD /* Frameworks */,
-				B1C4EE8A265F6DE30059FBBD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B1C4EE8E265F6DE30059FBBD /* PBXTargetDependency */,
-			);
-			name = fourfourUITests;
-			productName = fourfourUITests;
-			productReference = B1C4EE8C265F6DE30059FBBD /* fourfourUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -216,14 +151,6 @@
 				TargetAttributes = {
 					B1C4EE6F265F6DE20059FBBD = {
 						CreatedOnToolsVersion = 12.5;
-					};
-					B1C4EE80265F6DE30059FBBD = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = B1C4EE6F265F6DE20059FBBD;
-					};
-					B1C4EE8B265F6DE30059FBBD = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = B1C4EE6F265F6DE20059FBBD;
 					};
 				};
 			};
@@ -241,8 +168,6 @@
 			projectRoot = "";
 			targets = (
 				B1C4EE6F265F6DE20059FBBD /* fourfour */,
-				B1C4EE80265F6DE30059FBBD /* fourfourTests */,
-				B1C4EE8B265F6DE30059FBBD /* fourfourUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,20 +183,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1C4EE7F265F6DE30059FBBD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1C4EE8A265F6DE30059FBBD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -283,41 +194,16 @@
 				B1ABD8EB266C578800CF262B /* MusicAPI.swift in Sources */,
 				B1ABD8FB266C6BD300CF262B /* CompositionView.swift in Sources */,
 				B1C4EE76265F6DE20059FBBD /* ContentView.swift in Sources */,
+				B146CF7B2702862800EEF4DC /* DirectoryView.swift in Sources */,
 				B1C4EE74265F6DE20059FBBD /* fourfourApp.swift in Sources */,
 				B1ABD8FF266C9D1100CF262B /* Search.swift in Sources */,
 				B1ABD8F1266C686500CF262B /* Song.swift in Sources */,
+				B146CF79270283CC00EEF4DC /* NewNoteView.swift in Sources */,
 				B1ABD8F9266C6B7500CF262B /* DiscoverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1C4EE7D265F6DE30059FBBD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1C4EE88265F6DE30059FBBD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B1C4EE83265F6DE30059FBBD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B1C4EE6F265F6DE20059FBBD /* fourfour */;
-			targetProxy = B1C4EE82265F6DE30059FBBD /* PBXContainerItemProxy */;
-		};
-		B1C4EE8E265F6DE30059FBBD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B1C4EE6F265F6DE20059FBBD /* fourfour */;
-			targetProxy = B1C4EE8D265F6DE30059FBBD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B1C4EE93265F6DE30059FBBD /* Debug */ = {
@@ -480,86 +366,6 @@
 			};
 			name = Release;
 		};
-		B1C4EE99265F6DE30059FBBD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = fourfourTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.callan.fourfourTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fourfour.app/fourfour";
-			};
-			name = Debug;
-		};
-		B1C4EE9A265F6DE30059FBBD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = fourfourTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.callan.fourfourTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fourfour.app/fourfour";
-			};
-			name = Release;
-		};
-		B1C4EE9C265F6DE30059FBBD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = fourfourUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.callan.fourfourUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = fourfour;
-			};
-			name = Debug;
-		};
-		B1C4EE9D265F6DE30059FBBD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = fourfourUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.callan.fourfourUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = fourfour;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -577,24 +383,6 @@
 			buildConfigurations = (
 				B1C4EE96265F6DE30059FBBD /* Debug */,
 				B1C4EE97265F6DE30059FBBD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B1C4EE98265F6DE30059FBBD /* Build configuration list for PBXNativeTarget "fourfourTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B1C4EE99265F6DE30059FBBD /* Debug */,
-				B1C4EE9A265F6DE30059FBBD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B1C4EE9B265F6DE30059FBBD /* Build configuration list for PBXNativeTarget "fourfourUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B1C4EE9C265F6DE30059FBBD /* Debug */,
-				B1C4EE9D265F6DE30059FBBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -31,7 +31,7 @@ struct ContentView: View {
             Spacer() // push tab bar to button
             
             Divider()
-                .padding(.bottom, 8)
+                .padding(.bottom, 10)
             HStack {
                 ForEach(0..<3, id: \.self) { number in
                     Spacer() // left space
@@ -39,9 +39,9 @@ struct ContentView: View {
                         self.selectedIndex = number
                     }, label: {
                         Image(systemName: icons[number])
-                            .padding(.bottom, 40)
-                            .font(.system(size: 25,
-                                          weight: .regular,
+                            .padding(.bottom, 50)
+                            .font(.system(size: 27,
+                                          weight: .semibold,
                                           design: .default))
                             .foregroundColor(selectedIndex == number ? .accentColor : Color(.label))
                     })
@@ -59,7 +59,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .preferredColorScheme(.dark)
+//            .preferredColorScheme(.dark)
             .previewDevice("iPhone 12")
     }
 }

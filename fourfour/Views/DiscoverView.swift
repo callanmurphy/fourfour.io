@@ -22,18 +22,18 @@ struct DiscoverView: View {
                     }
                     .padding(.vertical, 10)
                     .padding(.horizontal, 15)
-                    .border(Color.white)
                     .autocapitalization(.none)
                     .disableAutocorrection(true)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 25)
+                            .stroke(Color(.label), lineWidth: 1))
                     
                     Button("Search") {
                         searching.toggle()
                     }
                     .padding(.vertical, 10)
                     .padding(.horizontal, 15)
-                    .border(Color.white)
                     .foregroundColor(Color(.label))
-                    .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
                     if searching {
                         Text(getSong())
                     }

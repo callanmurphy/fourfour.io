@@ -1,5 +1,5 @@
 //
-//  LibraryView.swift
+//  FolderView.swift
 //  fourfour
 //
 //  Created by callan on 2021-06-05.
@@ -7,13 +7,14 @@
 
 import SwiftUI
 
-struct LibraryView: View {
+struct FolderView: View {
     @State private var query: String = ""
     @State private var lyricInput: String = ""
     @State private var isEditing = false
     @State private var searching = false
     @State private var isShowingSheet = false
-    var folders = ["General", "Musicals", "My Songs", "Project Germany"]
+    var songs = ["General", "Musicals", "My Songs", "Project Germany"]
+    var dates = ["03/31/2001", "03/31/2001", "03/31/2001", "03/31/2001"]
     var body: some View {
         NavigationView {
             List {
@@ -24,18 +25,18 @@ struct LibraryView: View {
                 .autocapitalization(.none)
                 .disableAutocorrection(true)
                 Section(header:
-                    Text("Folders")
+                    Text("Songs")
                             .font(.title3)
                             .fontWeight(.bold)
                             .foregroundColor(Color(.label))) {
-                    ForEach (folders, id: \.self) { folderName in
-                        FolderRow(name: folderName)
+                    ForEach (songs, id: \.self) { title in
+                        SongRow(name: title)
                     }
                 }
                 .textCase(nil)
             }
             .listStyle(InsetGroupedListStyle())
-            .navigationTitle("Library")
+            .navigationTitle("Folder")
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button(action: {
@@ -61,18 +62,19 @@ struct LibraryView: View {
     }
 }
 
-struct FolderRow: View {
+struct SongRow: View {
     var name: String
     var body: some View {
         HStack {
-            Image(systemName: "folder")
+            Image(systemName: "music.note")
             Text(name)
+//            Text(date)
         }
     }
 }
 
-struct LibraryView_Previews: PreviewProvider {
+struct FolderView_Previews: PreviewProvider {
     static var previews: some View {
-        LibraryView()
+        FolderView()
     }
 }
