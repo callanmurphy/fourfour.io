@@ -11,7 +11,7 @@ struct ContentView: View {
     @State var selectedIndex = 0
     @State var query: String = " "
     
-    let icons = ["magnifyingglass", "scribble", "music.note"]
+    let icons = ["magnifyingglass", "scribble", "music.note", "gear"]
     
     var body: some View {
         VStack {
@@ -23,24 +23,27 @@ struct ContentView: View {
                     CompositionView()
                 case 2:
                     LibraryView()
+                case 3:
+                    SettingsView()
                 default:
                     DiscoverView()
                 }
             }
             
-            Spacer() // push tab bar to button
+            Spacer() // push tab bar to bottom
             
             Divider()
-                .padding(.bottom, 10)
+//                .padding(.bottom, 7)
             HStack {
-                ForEach(0..<3, id: \.self) { number in
+                ForEach(0..<4, id: \.self) { number in
                     Spacer() // left space
                     Button(action: {
                         self.selectedIndex = number
                     }, label: {
                         Image(systemName: icons[number])
-                            .padding(.bottom, 50)
-                            .font(.system(size: 27,
+                            .padding(.top, 2)
+                            .padding(.bottom, 42)
+                            .font(.system(size: 22,
                                           weight: .semibold,
                                           design: .default))
                             .foregroundColor(selectedIndex == number ? .accentColor : Color(.label))

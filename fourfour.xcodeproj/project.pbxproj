@@ -10,6 +10,7 @@
 		B1156374266D46EC00FF455E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1156373266D46EC00FF455E /* LaunchScreen.storyboard */; };
 		B146CF79270283CC00EEF4DC /* NewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B146CF78270283CC00EEF4DC /* NewNoteView.swift */; };
 		B146CF7B2702862800EEF4DC /* DirectoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B146CF7A2702862800EEF4DC /* DirectoryView.swift */; };
+		B149C08427B02FBB0098BF89 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149C08327B02FBB0098BF89 /* SettingsView.swift */; };
 		B1ABD8EB266C578800CF262B /* MusicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABD8EA266C578800CF262B /* MusicAPI.swift */; };
 		B1ABD8F1266C686500CF262B /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABD8F0266C686500CF262B /* Song.swift */; };
 		B1ABD8F9266C6B7500CF262B /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABD8F8266C6B7500CF262B /* DiscoverView.swift */; };
@@ -26,6 +27,7 @@
 		B1156373266D46EC00FF455E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B146CF78270283CC00EEF4DC /* NewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteView.swift; sourceTree = "<group>"; };
 		B146CF7A2702862800EEF4DC /* DirectoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryView.swift; sourceTree = "<group>"; };
+		B149C08327B02FBB0098BF89 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B1ABD8EA266C578800CF262B /* MusicAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAPI.swift; sourceTree = "<group>"; };
 		B1ABD8F0266C686500CF262B /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		B1ABD8F8266C6B7500CF262B /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
@@ -59,16 +61,49 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		B149C08527B030010098BF89 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				B1ABD8F8266C6B7500CF262B /* DiscoverView.swift */,
+				B1ABD8FE266C9D1100CF262B /* Search.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		B149C08727B030290098BF89 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				B1ABD8FA266C6BD300CF262B /* CompositionView.swift */,
+				B146CF78270283CC00EEF4DC /* NewNoteView.swift */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		B149C08827B030370098BF89 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B1ABD8FC266C6BF600CF262B /* LibraryView.swift */,
+				B146CF7A2702862800EEF4DC /* DirectoryView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		B149C08927B030440098BF89 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B149C08327B02FBB0098BF89 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		B1ABD8EE266C681D00CF262B /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				B1C4EE75265F6DE20059FBBD /* ContentView.swift */,
-				B1ABD8F8266C6B7500CF262B /* DiscoverView.swift */,
-				B1ABD8FA266C6BD300CF262B /* CompositionView.swift */,
-				B1ABD8FC266C6BF600CF262B /* LibraryView.swift */,
-				B1ABD8FE266C9D1100CF262B /* Search.swift */,
-				B146CF78270283CC00EEF4DC /* NewNoteView.swift */,
-				B146CF7A2702862800EEF4DC /* DirectoryView.swift */,
+				B149C08927B030440098BF89 /* Settings */,
+				B149C08827B030370098BF89 /* Library */,
+				B149C08727B030290098BF89 /* Compose */,
+				B149C08527B030010098BF89 /* Discover */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +235,7 @@
 				B1ABD8F1266C686500CF262B /* Song.swift in Sources */,
 				B146CF79270283CC00EEF4DC /* NewNoteView.swift in Sources */,
 				B1ABD8F9266C6B7500CF262B /* DiscoverView.swift in Sources */,
+				B149C08427B02FBB0098BF89 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
