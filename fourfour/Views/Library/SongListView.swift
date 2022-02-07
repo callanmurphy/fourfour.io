@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct FolderView: View {
+struct SongListView: View {
     @State private var query: String = ""
     @State private var lyricInput: String = ""
     @State private var isEditing = false
     @State private var searching = false
     @State private var isShowingSheet = false
-    var songs = ["General", "Musicals", "My Songs", "Project Germany"]
+    var songs = ["Fair", "Nobody Needs to Know", "Perfect", "Tonight"]
     var dates = ["03/31/2001", "03/31/2001", "03/31/2001", "03/31/2001"]
     var body: some View {
         NavigationView {
@@ -65,16 +65,19 @@ struct FolderView: View {
 struct SongRow: View {
     var name: String
     var body: some View {
-        HStack {
-            Image(systemName: "music.note")
+        VStack {
+//            Image(systemName: "music.note")
             Text(name)
+            Text("03/12/21")
 //            Text(date)
         }
+        .padding()
     }
 }
 
-struct FolderView_Previews: PreviewProvider {
+struct SongListView_Previews: PreviewProvider {
     static var previews: some View {
-        FolderView()
+        SongListView()
+            .preferredColorScheme(.dark)
     }
 }

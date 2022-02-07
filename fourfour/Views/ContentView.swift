@@ -41,7 +41,7 @@ struct ContentView: View {
                         self.selectedIndex = number
                     }, label: {
                         Image(systemName: icons[number])
-                            .padding(.top, 2)
+                            .padding(.top, 4)
                             .padding(.bottom, 42)
                             .font(.system(size: 22,
                                           weight: .semibold,

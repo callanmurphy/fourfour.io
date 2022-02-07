@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let alertWidth = CGFloat(270)
+
 struct LibraryView: View {
     @State private var query: String = ""
     @State private var lyricInput: String = ""
@@ -49,7 +51,7 @@ struct LibraryView: View {
                     }
                 }
             }
-        if isCreatingFolder {
+        if !isCreatingFolder {
             NewFolderView()
         }
     }
@@ -66,7 +68,7 @@ struct NewFolderView: View {
         ZStack {
             RoundedRectangle(cornerRadius: 7)
                 .fill(Color(.systemGray5))
-                .frame(width: 250, height: 170, alignment: .center)
+                .frame(width: alertWidth, height: 160, alignment: .center)
             VStack {
                 Text("New Folder")
                     .font(.headline)
@@ -76,11 +78,15 @@ struct NewFolderView: View {
                     .font(.body)
                 Spacer()
                 TextField("Name", text: $newFolderName)
-                    .frame(width: 180, height: 2)
-                    .padding()
-                    .cornerRadius(7)
-                    .foregroundColor(Color(.label))
+                    .autocapitalization(.none)
+                    .disableAutocorrection(true)
+                    .padding(.all, 5)
+                    .background(Color(.systemGray4))
+                    .cornerRadius(5)
+                    .frame(width: alertWidth - 20, height: 2)
                 Spacer()
+                Color.gray.frame(width: alertWidth, height: CGFloat(1))
+                    .padding(.bottom, 5)
                 HStack {
                     Button(action: {print("Cancel")}) {
                         Text("Cancel")
@@ -93,7 +99,7 @@ struct NewFolderView: View {
                     }
                 }
             }
-            .frame(width: 250, height: 140)
+            .frame(width: alertWidth, height: 135)
         }
     }
 }
@@ -107,7 +113,6 @@ struct FolderRow: View {
             HStack {
                 Image(systemName: "folder")
                     .font(.body)
-//                    .foregroundColor(Color(.label))
                 Text(name)
                     .font(.body)
                     .foregroundColor(Color(.label))
