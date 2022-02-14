@@ -22,7 +22,7 @@ struct ContentView: View {
                 case 1:
                     CompositionView()
                 case 2:
-                    LibraryView()
+                    FolderListView()
                 case 3:
                     SettingsView()
                 default:

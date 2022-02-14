@@ -1,5 +1,5 @@
 //
-//  LibraryView.swift
+//  FolderListView.swift
 //  fourfour
 //
 //  Created by callan on 2021-06-05.
@@ -8,8 +8,12 @@
 import SwiftUI
 
 let alertWidth = CGFloat(270)
+let songs = [Song(title: "Fair", artist: "Cal Murphy"),
+             Song(title: "Nobody Needs to Know", artist: "Jason Robert Brown"),
+             Song(title: "Wake Me Up", artist: "Avicii"),
+             Song(title: "My Shot", artist: "Lin-Manuel Miranda")]
 
-struct LibraryView: View {
+struct FolderListView: View {
     @State private var query: String = ""
     @State private var lyricInput: String = ""
     @State private var newFolderName: String = ""
@@ -17,24 +21,31 @@ struct LibraryView: View {
     @State private var isCreatingFolder = false
     @State private var searching = false
     @State private var isShowingSheet = false
-    var folders = ["General", "Musicals", "My Songs", "Project Germany"]
+    var folders = [
+        Folder(title: "General", songs: songs),
+        Folder(title: "Musicals", songs: songs),
+        Folder(title: "My Songs", songs: songs),
+        Folder(title: "Project Germany", songs: songs)]
     var body: some View {
         ZStack {
             NavigationView {
                 List {
-                    TextField("Search", text: $query)
-                    { isEditing in
-                        self.isEditing = isEditing
-                    }
-                    .autocapitalization(.none)
-                    .disableAutocorrection(true)
+//                    TextField("Search", text: $query)
+//                    { isEditing in
+//                        self.isEditing = isEditing
+//                    }
+//                    .autocapitalization(.none)
+//                    .disableAutocorrection(true)
                     Section(header:
                         Text("Folders")
                                 .font(.title3)
                                 .fontWeight(.bold)
                                 .foregroundColor(Color(.label))) {
-                        ForEach (folders, id: \.self) { folderName in
-                            FolderRow(name: folderName)
+                        ForEach(folders) { folder in
+                            NavigationLink(destination: SongListView(folder: folder)){
+                                    Image(systemName: "folder").foregroundColor(.accentColor)
+                                    Text(folder.title)
+                            }
                         }
                     }
                     .textCase(nil)
@@ -51,18 +62,14 @@ struct LibraryView: View {
                     }
                 }
             }
-        if !isCreatingFolder {
-            NewFolderView()
+            if isCreatingFolder {
+                CreateFolderView()
+            }
         }
     }
 }
-    
-    func didDismiss() {
-        // Handle the dismissing action.
-    }
-}
 
-struct NewFolderView: View {
+struct CreateFolderView: View {
     @State private var newFolderName: String = ""
     var body: some View {
         ZStack {
@@ -104,25 +111,18 @@ struct NewFolderView: View {
     }
 }
 
-struct FolderRow: View {
-    var name: String
-    var body: some View {
-        Button(action: {
-            
-        })  {
-            HStack {
-                Image(systemName: "folder")
-                    .font(.body)
-                Text(name)
-                    .font(.body)
-                    .foregroundColor(Color(.label))
-            }
-        }
+class Folder: Identifiable {
+    var title: String
+    var songs: Array<Song>
+
+    init(title: String, songs: Array<Song>) {
+        self.title = title
+        self.songs = songs
     }
 }
 
-struct LibraryView_Previews: PreviewProvider {
+struct FolderListView_Previews: PreviewProvider {
     static var previews: some View {
-        LibraryView()
+        FolderListView()
     }
 }
