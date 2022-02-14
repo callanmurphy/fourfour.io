@@ -8,14 +8,36 @@
 import SwiftUI
 
 struct SongView: View {
+    @State var lyrics: String = ""
+//    @FocusState private var isFocused: Bool
     var song: Song
     var body: some View {
         ZStack {
-            VStack {
-                Text(song.title)
-                Text(song.artist)
+            VStack(alignment: .leading) {
+                TextEditor(text: $lyrics)
+                .disableAutocorrection(true)
+                .padding()
+//                .background(Color.gray)
+                .font(.custom("HelveticaNeue", size: 16))
+                .lineSpacing(5)
+//                .focused($isFocused)
+                Spacer()
+            }
+//            .navigationBarHidden(true)
+        }
+        .navigationTitle(song.title)
+        .toolbar {
+            ToolbarItemGroup(placement: .navigationBarTrailing) {
+                Button(action: {
+                    LocalStorage.myValue = self.lyrics
+                }) {
+                    Text("Done")
+                }
             }
         }
+        .onAppear(perform: {
+            self.lyrics = LocalStorage.myValue
+        })
     }
 }
 

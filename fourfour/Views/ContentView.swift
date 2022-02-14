@@ -14,44 +14,45 @@ struct ContentView: View {
     let icons = ["magnifyingglass", "scribble", "music.note", "gear"]
     
     var body: some View {
-        VStack {
-            ZStack {
-                switch selectedIndex {
-                case 0:
-                    DiscoverView()
-                case 1:
-                    CompositionView()
-                case 2:
-                    FolderListView()
-                case 3:
-                    SettingsView()
-                default:
-                    DiscoverView()
-                }
-            }
-            
-            Spacer() // push tab bar to bottom
-            
-            Divider()
-//                .padding(.bottom, 7)
-            HStack {
-                ForEach(0..<4, id: \.self) { number in
-                    Spacer() // left space
-                    Button(action: {
-                        self.selectedIndex = number
-                    }, label: {
-                        Image(systemName: icons[number])
-                            .padding(.top, 4)
-                            .padding(.bottom, 42)
-                            .font(.system(size: 22,
-                                          weight: .semibold,
-                                          design: .default))
-                            .foregroundColor(selectedIndex == number ? .accentColor : Color(.label))
-                    })
-                    Spacer() // right space
-                }
-            }
-        }
+        FolderListView()
+//        VStack {
+//            ZStack {
+//                switch selectedIndex {
+//                case 0:
+//                    DiscoverView()
+//                case 1:
+//                    CompositionView()
+//                case 2:
+//                    FolderListView()
+//                case 3:
+//                    SettingsView()
+//                default:
+//                    DiscoverView()
+//                }
+//            }
+//
+//            Spacer() // push tab bar to bottom
+//
+//            Divider()
+////                .padding(.bottom, 7)
+//            HStack {
+//                ForEach(0..<4, id: \.self) { number in
+//                    Spacer() // left space
+//                    Button(action: {
+//                        self.selectedIndex = number
+//                    }, label: {
+//                        Image(systemName: icons[number])
+//                            .padding(.top, 4)
+//                            .padding(.bottom, 42)
+//                            .font(.system(size: 22,
+//                                          weight: .semibold,
+//                                          design: .default))
+//                            .foregroundColor(selectedIndex == number ? .accentColor : Color(.label))
+//                    })
+//                    Spacer() // right space
+//                }
+//            }
+//        }
         .edgesIgnoringSafeArea(.bottom)
     }
     

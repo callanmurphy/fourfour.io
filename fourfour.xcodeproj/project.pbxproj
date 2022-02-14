@@ -21,6 +21,7 @@
 		B1C4EE76265F6DE20059FBBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C4EE75265F6DE20059FBBD /* ContentView.swift */; };
 		B1C4EE78265F6DE30059FBBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C4EE77265F6DE30059FBBD /* Assets.xcassets */; };
 		B1C4EE7B265F6DE30059FBBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C4EE7A265F6DE30059FBBD /* Preview Assets.xcassets */; };
+		B1C5599927BAFEAE008E1970 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C5599827BAFEAE008E1970 /* LocalStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		B1C4EE77265F6DE30059FBBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1C4EE7A265F6DE30059FBBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B1C4EE7C265F6DE30059FBBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1C5599827BAFEAE008E1970 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				B1C4EE77265F6DE30059FBBD /* Assets.xcassets */,
 				B1C4EE7C265F6DE30059FBBD /* Info.plist */,
 				B1C4EE79265F6DE30059FBBD /* Preview Content */,
+				B1C5599827BAFEAE008E1970 /* LocalStorage.swift */,
 			);
 			path = fourfour;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				B1C4EE74265F6DE20059FBBD /* fourfourApp.swift in Sources */,
 				B1ABD8FF266C9D1100CF262B /* Search.swift in Sources */,
 				B146CF79270283CC00EEF4DC /* NewNoteView.swift in Sources */,
+				B1C5599927BAFEAE008E1970 /* LocalStorage.swift in Sources */,
 				B1ABD8F9266C6B7500CF262B /* DiscoverView.swift in Sources */,
 				B149C08427B02FBB0098BF89 /* SettingsView.swift in Sources */,
 			);
